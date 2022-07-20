@@ -1,0 +1,109 @@
+/* -------------------------------- 
+
+Start About Us style
+
+-------------------------------- */
+.about_us_sec {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin-bottom: 50px;
+    background-image: url(../img/about_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: #f4f6f9;
+}
+
+.about_content {
+    width: 100%;
+    padding: 70px 0;
+    padding-left: 15px;
+    h1 {
+        font-size: 70px;
+        font-weight: 700;
+        line-height: 70px;
+        padding-bottom: 40px;
+        span {
+            color: $base_color;
+        }
+    }
+    h2 {
+        color: $base_color;
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 15px;
+        font-weight: 600;
+    }
+    h4 {
+        font-size: 12px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+    p {
+        padding-bottom: 10px;
+        font-weight: 400;
+        font-size: 12px;
+        color: $text_color;
+        line-height: normal;
+    }
+    .btn {
+        padding: 14px 32px;
+        background-color: #fff;
+        color: $text_color;
+        font-weight: 500;
+        font-size: 16px;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        border-radius: 5px;
+        border: 1px solid $text_color;
+
+        svg {
+            color: $base_color;
+            padding-top: 4px;
+        }
+
+        &:after {
+            content: "";
+            width: 0;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            -webkit-transition: 0.3s all ease;
+            -moz-transition: 0.3s all ease;
+            -ms-transition: 0.3s all ease;
+            -o-transition: 0.3s all ease;
+            transition: 0.3s all ease;
+            background-color: $base_color;
+            border-radius: 5px;
+        }
+
+        &:hover {
+            color: #fff;
+            svg {
+                color: #fff;
+            }
+            &:after {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.right_bg_about {
+    position: absolute;
+    right: 0;
+    top: 80px;
+    z-index: -1;
+}
+
+/* -------------------------------- 
+
+Close About Us style
+
+-------------------------------- */

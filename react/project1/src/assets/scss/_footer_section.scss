@@ -1,0 +1,112 @@
+.footer_x_widger {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    background-color: #f8fbfd;
+    background-image: url("../img/footer_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    padding-bottom: 70px;
+    &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-image: url("../img/footer_background_shape.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+        z-index: -2;
+    }
+    &:after {
+        content: "";
+        width: 25%;
+        height: 45%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-image: url("../img/connect_with_me_vector.png");
+        background-size: contain;
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        z-index: -2;
+    }
+    h1 {
+        font-weight: 600;
+        color: $heading_color;
+        font-size: 70px;
+        line-height: 1.2em;
+        margin-top: 15%;
+        span {
+            color: $base_color;
+        }
+    }
+    .contact-form {
+        margin-top: 15%;
+        input, textarea {
+            background-color: #464545;
+            border: none;
+            border-radius: 0%;
+            &::placeholder {
+                padding-left: 10px;
+                font-size: 15px;
+            }
+        }
+        button {
+            background-color: $base_color;
+            color: #fff;
+            border: none;
+            border-radius: 0%;
+            &:hover {
+                color: $base_color;
+                background-color: $heading_color;
+            }            
+        }
+    }
+    .widget {
+        color: $heading_color;
+        margin-bottom: 20px;
+        margin-left: 5px;
+        h3 {
+            font-size: 10px;
+            color: $heading_color;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 30px;
+            color: $heading_color;
+        }
+    }
+    .footer_social {
+        margin-left: 5px;
+        .col-mod-3 {
+            margin-top: 8px;
+            margin-left: 15px;
+        }
+        .footer_social_label {
+            color: $base_color;
+        }
+        ul {
+            li {
+                display: inline-block;
+                padding-left: 20px;
+                a {
+                    background-color: $base_color;
+                    color: #fff;
+                    &:hover {
+                        color: $base_color;
+                        background-color: $heading_color;
+                    }
+                    svg {
+                        position: relative;
+                        top: 8px;
+                        margin: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
